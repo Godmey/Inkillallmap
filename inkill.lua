@@ -1,3 +1,4 @@
+print("By : kill Hub")
 spawn(function()
     while wait() do
         pcall(function()
@@ -9,7 +10,7 @@ spawn(function()
                 
                 local Den
                 if getgenv().Config["Folder Mon"] == "nil" then
-                    Den = game.Workspace:GetChilldren()
+                    Den = game.Workspace:GetDescendants()
                 else
                     Den = game.Workspace[getgenv().Config["Folder Mon"]]:GetDescendants()
                 end
