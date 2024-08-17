@@ -14,7 +14,7 @@ spawn(function()
                         local playerPosition = character:FindFirstChild("HumanoidRootPart") and character.HumanoidRootPart.Position
                         if npcPosition and playerPosition and (npcPosition - playerPosition).Magnitude <= getgenv().Config["Radius"] then
                             if v.Health < v.MaxHealth then
-                                wait(.1)
+                                wait(0.1)
                                 v.Health = 0
                             end
                         end
