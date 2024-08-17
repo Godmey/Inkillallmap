@@ -7,7 +7,7 @@ spawn(function()
                 sethiddenproperty(player, "SimulationRadius", 112412400000)
                 sethiddenproperty(player, "MaxSimulationRadius", 112412400000)
                 
-                local descendants
+                local Den
                 if getgenv().Config["Folder Mon"] == "nil" then
                     Den = game.Workspace:GetChilldren()
                 else
